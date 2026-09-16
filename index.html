@@ -1,0 +1,1748 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="FINOVA is a smart personal finance dashboard designed to help you understand your money, track spending and reach your goals."
+  >
+
+  <meta name="theme-color" content="#0f172a">
+
+  <title>FINOVA — Smart Personal Finance</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       FINOVA APP
+  ====================================================== -->
+
+  <div class="app-shell">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Brand -->
+      <div class="brand">
+
+        <div class="brand-mark">
+          F
+        </div>
+
+        <div class="brand-copy">
+          <span class="brand-name">FINOVA</span>
+          <span class="brand-tagline">Smart Finance</span>
+        </div>
+
+      </div>
+
+
+      <!-- Main Navigation -->
+      <nav class="main-nav" aria-label="Main navigation">
+
+        <a href="#dashboard" class="nav-link active">
+
+          <span class="nav-icon">⌂</span>
+
+          <span>
+            Dashboard
+          </span>
+
+        </a>
+
+
+        <a href="#transactions" class="nav-link">
+
+          <span class="nav-icon">↔️</span>
+
+          <span>
+            Transactions
+          </span>
+
+        </a>
+
+
+        <a href="#analytics" class="nav-link">
+
+          <span class="nav-icon">◫</span>
+
+          <span>
+            Analytics
+          </span>
+
+        </a>
+
+
+        <a href="#goals" class="nav-link">
+
+          <span class="nav-icon">◎</span>
+
+          <span>
+            Goals
+          </span>
+
+        </a>
+
+      </nav>
+
+
+      <!-- Sidebar Bottom -->
+      <div class="sidebar-bottom">
+
+        <a href="#settings" class="nav-link">
+
+          <span class="nav-icon">⚙️</span>
+
+          <span>
+            Settings
+          </span>
+
+        </a>
+
+
+        <!-- Sidebar Promotional Card -->
+        <div class="sidebar-card">
+
+          <span class="sidebar-card-icon">
+            ✦
+          </span>
+
+          <strong>
+            Smart money starts with clarity.
+          </strong>
+
+          <p>
+            Track your habits and stay ahead of your goals.
+          </p>
+
+        </div>
+
+
+        <!-- Profile -->
+        <div class="profile-mini">
+
+          <div class="avatar">
+            EA
+          </div>
+
+          <div class="profile-mini-text">
+
+            <strong>
+              Esther Austra
+            </strong>
+
+            <span>
+              Personal Account
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content" id="dashboard">
+
+
+      <!-- ===================================================
+           TOP BAR
+      ==================================================== -->
+
+      <header class="topbar">
+
+        <!-- Mobile Brand -->
+        <div class="mobile-brand">
+
+          <div class="brand-mark">
+            F
+          </div>
+
+          <span>
+            FINOVA
+          </span>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <button
+          class="mobile-menu"
+          id="menuButton"
+          aria-label="Open navigation"
+          type="button"
+        >
+          ☰
+        </button>
+
+
+        <!-- Top Actions -->
+        <div class="topbar-actions">
+
+          <!-- Theme -->
+          <button
+            class="icon-button"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            ◐
+          </button>
+
+
+          <!-- Notifications -->
+          <button
+            class="notification-button"
+            type="button"
+            aria-label="Notifications"
+          >
+
+            ♢
+
+            <span class="notification-dot"></span>
+
+          </button>
+
+
+          <!-- Profile -->
+          <div class="top-profile">
+
+            <div class="avatar">
+              EA
+            </div>
+
+            <div class="top-profile-text">
+
+              <strong>
+                Esther
+              </strong>
+
+              <span>
+                My account
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ===================================================
+           DASHBOARD INTRO
+      ==================================================== -->
+
+      <section class="dashboard-intro">
+
+        <div class="intro-copy">
+
+          <span class="eyebrow">
+            PERSONAL FINANCE
+          </span>
+
+          <h1>
+            Good morning, Esther
+            <span>👋</span>
+          </h1>
+
+          <p>
+            Here's your financial overview for September.
+          </p>
+
+        </div>
+
+
+        <button
+          class="primary-button"
+          id="addTransactionButton"
+          type="button"
+        >
+
+          <span>
+            +
+          </span>
+
+          Add transaction
+
+        </button>
+
+      </section>
+
+
+      <!-- ===================================================
+           FEATURE IMAGE
+      ==================================================== -->
+
+      <section class="finance-feature">
+
+        <div class="feature-image">
+
+          <img
+            src="images/finance-hero.jpg"
+            alt="Modern financial planning workspace"
+          >
+
+          <div class="image-overlay"></div>
+
+          <div class="feature-image-content">
+
+            <span class="feature-label">
+              FINOVA SMART
+            </span>
+
+            <h2>
+              Make every shilling
+              <br>
+              work smarter.
+            </h2>
+
+            <p>
+              Understand your habits, plan your future
+              and stay in control of your money.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Feature Stats -->
+        <div class="feature-stat-card">
+
+          <span class="feature-stat-icon">
+            ✦
+          </span>
+
+          <div>
+
+            <span>
+              Financial health
+            </span>
+
+            <strong>
+              Excellent
+            </strong>
+
+          </div>
+
+          <span class="health-score">
+            86
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           SUMMARY CARDS
+      ==================================================== -->
+
+      <section
+        class="summary-grid"
+        aria-label="Financial summary"
+      >
+
+
+        <!-- Balance -->
+        <article class="summary-card balance-card">
+
+          <div class="card-top">
+
+            <span>
+              Total balance
+            </span>
+
+            <span class="card-icon">
+              ◈
+            </span>
+
+          </div>
+
+          <div class="balance-value">
+
+            <span>
+              KSh
+            </span>
+
+            <strong id="totalBalance">
+              248,650
+            </strong>
+
+          </div>
+
+          <div class="trend positive">
+
+            <span>
+              ↗️
+            </span>
+
+            <strong>
+              8.4%
+            </strong>
+
+            <span>
+              vs last month
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- Income -->
+        <article class="summary-card">
+
+          <div class="card-top">
+
+            <span>
+              Monthly income
+            </span>
+
+            <span class="card-icon income-icon">
+              ↗️
+            </span>
+
+          </div>
+
+          <div class="metric-value">
+
+            <span>
+              KSh
+            </span>
+
+            <strong id="incomeTotal">
+              180,000
+            </strong>
+
+          </div>
+
+          <div class="trend positive">
+
+            <span>
+              ↗️
+            </span>
+
+            <strong>
+              12.2%
+            </strong>
+
+            <span>
+              this month
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- Expenses -->
+        <article class="summary-card">
+
+          <div class="card-top">
+
+            <span>
+              Monthly expenses
+            </span>
+
+            <span class="card-icon expense-icon">
+              ↘️
+            </span>
+
+          </div>
+
+          <div class="metric-value">
+
+            <span>
+              KSh
+            </span>
+
+            <strong id="expenseTotal">
+              74,850
+            </strong>
+
+          </div>
+
+          <div class="trend negative">
+
+            <span>
+              ↗️
+            </span>
+
+            <strong>
+              4.8%
+            </strong>
+
+            <span>
+              vs last month
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <!-- Savings -->
+        <article class="summary-card">
+
+          <div class="card-top">
+
+            <span>
+              Savings
+            </span>
+
+            <span class="card-icon savings-icon">
+              ✦
+            </span>
+
+          </div>
+
+          <div class="metric-value">
+
+            <span>
+              KSh
+            </span>
+
+            <strong id="savingsTotal">
+              105,150
+            </strong>
+
+          </div>
+
+          <div class="trend positive">
+
+            <span>
+              ↗️
+            </span>
+
+            <strong>
+              16.5%
+            </strong>
+
+            <span>
+              saved this month
+            </span>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ===================================================
+           DASHBOARD GRID
+      ==================================================== -->
+
+      <section class="dashboard-grid">
+
+
+        <!-- =================================================
+             ANALYTICS
+        ================================================== -->
+
+        <article
+          class="panel spending-panel"
+          id="analytics"
+        >
+
+          <div class="panel-header">
+
+            <div>
+
+              <span class="section-label">
+                ANALYTICS
+              </span>
+
+              <h2>
+                Spending overview
+              </h2>
+
+            </div>
+
+
+            <select
+              id="periodSelect"
+              class="period-select"
+              aria-label="Select spending period"
+            >
+
+              <option value="month">
+                This month
+              </option>
+
+              <option value="week">
+                This week
+              </option>
+
+              <option value="year">
+                This year
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Chart -->
+          <div class="chart-area">
+
+            <div class="chart-y-axis">
+
+              <span>
+                80K
+              </span>
+
+              <span>
+                60K
+              </span>
+
+              <span>
+                40K
+              </span>
+
+              <span>
+                20K
+              </span>
+
+              <span>
+                0
+              </span>
+
+            </div>
+
+
+            <div class="bar-chart">
+
+              <div class="grid-line line-1"></div>
+              <div class="grid-line line-2"></div>
+              <div class="grid-line line-3"></div>
+              <div class="grid-line line-4"></div>
+              <div class="grid-line line-5"></div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar"
+                  style="height: 48%;"
+                ></div>
+
+                <span>
+                  Mon
+                </span>
+
+              </div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar"
+                  style="height: 66%;"
+                ></div>
+
+                <span>
+                  Tue
+                </span>
+
+              </div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar"
+                  style="height: 38%;"
+                ></div>
+
+                <span>
+                  Wed
+                </span>
+
+              </div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar active-bar"
+                  style="height: 78%;"
+                ></div>
+
+                <span>
+                  Thu
+                </span>
+
+              </div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar"
+                  style="height: 56%;"
+                ></div>
+
+                <span>
+                  Fri
+                </span>
+
+              </div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar"
+                  style="height: 31%;"
+                ></div>
+
+                <span>
+                  Sat
+                </span>
+
+              </div>
+
+
+              <div class="bar-group">
+
+                <div
+                  class="bar"
+                  style="height: 44%;"
+                ></div>
+
+                <span>
+                  Sun
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="chart-footer">
+
+            <div>
+
+              <span class="legend-dot"></span>
+
+              <span>
+                Daily spending
+              </span>
+
+            </div>
+
+            <strong>
+              KSh 74,850 total
+            </strong>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             SPENDING CATEGORIES
+        ================================================== -->
+
+        <article class="panel category-panel">
+
+          <div class="panel-header">
+
+            <div>
+
+              <span class="section-label">
+                BREAKDOWN
+              </span>
+
+              <h2>
+                Where your money goes
+              </h2>
+
+            </div>
+
+            <button
+              class="text-button"
+              type="button"
+            >
+              View all →
+            </button>
+
+          </div>
+
+
+          <!-- Donut -->
+          <div class="donut-wrapper">
+
+            <div class="donut-chart">
+
+              <div class="donut-center">
+
+                <strong>
+                  74.8K
+                </strong>
+
+                <span>
+                  Total spend
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Categories -->
+          <div class="category-list">
+
+
+            <div class="category-item">
+
+              <div class="category-info">
+
+                <span class="category-dot housing"></span>
+
+                <span>
+                  Housing
+                </span>
+
+              </div>
+
+              <strong>
+                32%
+              </strong>
+
+            </div>
+
+
+            <div class="category-item">
+
+              <div class="category-info">
+
+                <span class="category-dot food"></span>
+
+                <span>
+                  Food & Dining
+                </span>
+
+              </div>
+
+              <strong>
+                24%
+              </strong>
+
+            </div>
+
+
+            <div class="category-item">
+
+              <div class="category-info">
+
+                <span class="category-dot transport"></span>
+
+                <span>
+                  Transport
+                </span>
+
+              </div>
+
+              <strong>
+                18%
+              </strong>
+
+            </div>
+
+
+            <div class="category-item">
+
+              <div class="category-info">
+
+                <span class="category-dot lifestyle"></span>
+
+                <span>
+                  Lifestyle
+                </span>
+
+              </div>
+
+              <strong>
+                14%
+              </strong>
+
+            </div>
+
+
+            <div class="category-item">
+
+              <div class="category-info">
+
+                <span class="category-dot other"></span>
+
+                <span>
+                  Other
+                </span>
+
+              </div>
+
+              <strong>
+                12%
+              </strong>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             TRANSACTIONS
+        ================================================== -->
+
+        <article
+          class="panel transactions-panel"
+          id="transactions"
+        >
+
+          <div class="panel-header">
+
+            <div>
+
+              <span class="section-label">
+                ACTIVITY
+              </span>
+
+              <h2>
+                Recent transactions
+              </h2>
+
+            </div>
+
+            <button
+              class="text-button"
+              type="button"
+            >
+              See all →
+            </button>
+
+          </div>
+
+
+          <div
+            class="transaction-list"
+            id="transactionList"
+          >
+
+
+            <!-- Transaction 1 -->
+            <div class="transaction-item">
+
+              <div class="transaction-icon shopping">
+                🛍️
+              </div>
+
+              <div class="transaction-details">
+
+                <strong>
+                  Shopping
+                </strong>
+
+                <span>
+                  Today · 10:42 AM
+                </span>
+
+              </div>
+
+              <div class="transaction-amount expense">
+                - KSh 8,500
+              </div>
+
+            </div>
+
+
+            <!-- Transaction 2 -->
+            <div class="transaction-item">
+
+              <div class="transaction-icon salary">
+                ↗️
+              </div>
+
+              <div class="transaction-details">
+
+                <strong>
+                  Monthly salary
+                </strong>
+
+                <span>
+                  Yesterday · 09:00 AM
+                </span>
+
+              </div>
+
+              <div class="transaction-amount income">
+                + KSh 180,000
+              </div>
+
+            </div>
+
+
+            <!-- Transaction 3 -->
+            <div class="transaction-item">
+
+              <div class="transaction-icon food">
+                ☕
+              </div>
+
+              <div class="transaction-details">
+
+                <strong>
+                  Restaurant
+                </strong>
+
+                <span>
+                  Sep 14 · 07:35 PM
+                </span>
+
+              </div>
+
+              <div class="transaction-amount expense">
+                - KSh 3,200
+              </div>
+
+            </div>
+
+
+            <!-- Transaction 4 -->
+            <div class="transaction-item">
+
+              <div class="transaction-icon transport">
+                ⌁
+              </div>
+
+              <div class="transaction-details">
+
+                <strong>
+                  Transport
+                </strong>
+
+                <span>
+                  Sep 14 · 08:10 AM
+                </span>
+
+              </div>
+
+              <div class="transaction-amount expense">
+                - KSh 1,850
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- =================================================
+             SMART INSIGHTS
+        ================================================== -->
+
+        <article class="panel insight-panel">
+
+          <div class="insight-heading">
+
+            <div class="sparkle-icon">
+              ✦
+            </div>
+
+            <div>
+
+              <span class="section-label">
+                FINOVA INTELLIGENCE
+              </span>
+
+              <h2>
+                Smart insight
+              </h2>
+
+            </div>
+
+          </div>
+
+
+          <div class="insight-content">
+
+            <h3>
+              Your spending is looking healthy.
+            </h3>
+
+            <p>
+              You've saved <strong>16.5%</strong> of your income
+              this month. That's above your current monthly target
+              of 15%.
+            </p>
+
+
+            <div class="insight-progress">
+
+              <div class="progress-track">
+
+                <div
+                  class="progress-fill"
+                  style="width: 82%;"
+                ></div>
+
+              </div>
+
+
+              <div class="progress-labels">
+
+                <span>
+                  Monthly target
+                </span>
+
+                <strong>
+                  82%
+                </strong>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <button
+            class="outline-button"
+            type="button"
+          >
+            View recommendations
+          </button>
+
+        </article>
+
+      </section>
+
+
+      <!-- ===================================================
+           FINANCIAL EDUCATION / IMAGE CARD
+      ==================================================== -->
+
+      <section class="money-education">
+
+        <div class="education-image">
+
+          <img
+            src="images/financial-planning.jpg"
+            alt="Person planning personal finances"
+          >
+
+        </div>
+
+
+        <div class="education-content">
+
+          <span class="section-label">
+            MONEY MINDSET
+          </span>
+
+          <h2>
+            Small habits create
+            bigger financial freedom.
+          </h2>
+
+          <p>
+            Building financial confidence doesn't happen overnight.
+            Understand where your money goes, create realistic goals
+            and make progress consistently.
+          </p>
+
+
+          <div class="education-points">
+
+            <div class="education-point">
+
+              <span>
+                01
+              </span>
+
+              <div>
+
+                <strong>
+                  Track your spending
+                </strong>
+
+                <p>
+                  Know exactly where your money is going.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="education-point">
+
+              <span>
+                02
+              </span>
+
+              <div>
+
+                <strong>
+                  Build your savings
+                </strong>
+
+                <p>
+                  Turn small contributions into meaningful goals.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="education-point">
+
+              <span>
+                03
+              </span>
+
+              <div>
+
+                <strong>
+                  Plan ahead
+                </strong>
+
+                <p>
+                  Give every financial goal a clear direction.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           SAVINGS GOALS
+      ==================================================== -->
+
+      <section
+        class="goals-section"
+        id="goals"
+      >
+
+        <div class="section-heading-row">
+
+          <div>
+
+            <span class="section-label">
+              YOUR TARGETS
+            </span>
+
+            <h2>
+              Savings goals
+            </h2>
+
+          </div>
+
+
+          <button
+            class="text-button"
+            id="newGoalButton"
+            type="button"
+          >
+            + New goal
+          </button>
+
+        </div>
+
+
+        <div class="goals-grid">
+
+
+          <!-- Emergency Fund -->
+          <article class="goal-card">
+
+            <div class="goal-card-top">
+
+              <div class="goal-icon emergency">
+                ✦
+              </div>
+
+              <button
+                class="more-button"
+                type="button"
+                aria-label="More emergency fund options"
+              >
+                •••
+              </button>
+
+            </div>
+
+
+            <h3>
+              Emergency fund
+            </h3>
+
+            <p>
+              Build a safety net for unexpected expenses.
+            </p>
+
+
+            <div class="goal-money">
+
+              <strong>
+                KSh 136,000
+              </strong>
+
+              <span>
+                of KSh 200,000
+              </span>
+
+            </div>
+
+
+            <div class="goal-progress">
+
+              <div style="width: 68%;"></div>
+
+            </div>
+
+
+            <div class="goal-footer">
+
+              <span>
+                68% complete
+              </span>
+
+              <strong>
+                3 months left
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <!-- Vacation -->
+          <article class="goal-card">
+
+            <div class="goal-card-top">
+
+              <div class="goal-icon travel">
+                ✈️
+              </div>
+
+              <button
+                class="more-button"
+                type="button"
+                aria-label="More vacation options"
+              >
+                •••
+              </button>
+
+            </div>
+
+
+            <h3>
+              Dream vacation
+            </h3>
+
+            <p>
+              Save toward your next unforgettable adventure.
+            </p>
+
+
+            <div class="goal-money">
+
+              <strong>
+                KSh 84,500
+              </strong>
+
+              <span>
+                of KSh 150,000
+              </span>
+
+            </div>
+
+
+            <div class="goal-progress">
+
+              <div style="width: 56%;"></div>
+
+            </div>
+
+
+            <div class="goal-footer">
+
+              <span>
+                56% complete
+              </span>
+
+              <strong>
+                5 months left
+              </strong>
+
+            </div>
+
+          </article>
+
+
+          <!-- Image Goal Card -->
+          <article class="goal-card image-goal-card">
+
+            <div class="goal-card-image">
+
+              <img
+                src="images/savings-goal.jpg"
+                alt="Person planning a future financial goal"
+              >
+
+            </div>
+
+            <div class="goal-image-content">
+
+              <span>
+                DREAM BIG
+              </span>
+
+              <h3>
+                Your next goal starts here.
+              </h3>
+
+              <button
+                class="outline-button"
+                id="imageGoalButton"
+                type="button"
+              >
+                Create goal
+              </button>
+
+            </div>
+
+          </article>
+
+
+          <!-- Add Goal -->
+          <article
+            class="goal-card add-goal-card"
+            id="addGoalCard"
+          >
+
+            <div class="add-goal-icon">
+              +
+            </div>
+
+            <h3>
+              Create a new goal
+            </h3>
+
+            <p>
+              Turn your plans into achievable financial milestones.
+            </p>
+
+            <button
+              class="outline-button"
+              type="button"
+            >
+              Create goal
+            </button>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           FOOTER
+      ==================================================== -->
+
+      <footer class="footer">
+
+        <span>
+          © 2026 FINOVA. Designed & built by Esther Austra.
+        </span>
+
+
+        <div>
+
+          <a href="#dashboard">
+            Privacy
+          </a>
+
+          <a href="#dashboard">
+            Terms
+          </a>
+
+          <a href="#dashboard">
+            Support
+          </a>
+
+        </div>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+
+  <!-- =====================================================
+       ADD TRANSACTION MODAL
+  ====================================================== -->
+
+  <div
+    class="modal-overlay"
+    id="transactionModal"
+  >
+
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="transactionModalTitle"
+    >
+
+      <button
+        class="modal-close"
+        id="closeTransactionModal"
+        type="button"
+        aria-label="Close transaction window"
+      >
+        ×
+      </button>
+
+
+      <span class="section-label">
+        NEW ACTIVITY
+      </span>
+
+      <h2 id="transactionModalTitle">
+        Add transaction
+      </h2>
+
+      <p class="modal-description">
+        Record your income or spending.
+      </p>
+
+
+      <form id="transactionForm">
+
+        <label for="transactionName">
+          Transaction name
+        </label>
+
+        <input
+          type="text"
+          id="transactionName"
+          placeholder="e.g. Groceries"
+          required
+        >
+
+
+        <label for="transactionType">
+          Type
+        </label>
+
+        <select
+          id="transactionType"
+          required
+        >
+
+          <option value="expense">
+            Expense
+          </option>
+
+          <option value="income">
+            Income
+          </option>
+
+        </select>
+
+
+        <label for="transactionAmount">
+          Amount
+        </label>
+
+        <input
+          type="number"
+          id="transactionAmount"
+          placeholder="e.g. 2500"
+          min="1"
+          required
+        >
+
+
+        <label for="transactionCategory">
+          Category
+        </label>
+
+        <select id="transactionCategory">
+
+          <option>
+            Food & Dining
+          </option>
+
+          <option>
+            Housing
+          </option>
+
+          <option>
+            Transport
+          </option>
+
+          <option>
+            Shopping
+          </option>
+
+          <option>
+            Lifestyle
+          </option>
+
+          <option>
+            Other
+          </option>
+
+        </select>
+
+
+        <button
+          type="submit"
+          class="primary-button modal-submit"
+        >
+          Save transaction
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       NEW GOAL MODAL
+  ====================================================== -->
+
+  <div
+    class="modal-overlay"
+    id="goalModal"
+  >
+
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="goalModalTitle"
+    >
+
+      <button
+        class="modal-close"
+        id="closeGoalModal"
+        type="button"
+        aria-label="Close goal window"
+      >
+        ×
+      </button>
+
+
+      <span class="section-label">
+        NEW TARGET
+      </span>
+
+      <h2 id="goalModalTitle">
+        Create a savings goal
+      </h2>
+
+      <p class="modal-description">
+        Give your next goal a name and target.
+      </p>
+
+
+      <form id="goalForm">
+
+        <label for="goalName">
+          Goal name
+        </label>
+
+        <input
+          type="text"
+          id="goalName"
+          placeholder="e.g. New laptop"
+          required
+        >
+
+
+        <label for="goalTarget">
+          Target amount
+        </label>
+
+        <input
+          type="number"
+          id="goalTarget"
+          placeholder="e.g. 80000"
+          min="1"
+          required
+        >
+
+
+        <button
+          type="submit"
+          class="primary-button modal-submit"
+        >
+          Create goal
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
